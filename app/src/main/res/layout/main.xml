@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Two image layers that cross-fade into each other -->
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textColor="#CCCCCC"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="#D32F2F"
+        android:paddingLeft="28dp"
+        android:paddingTop="14dp"
+        android:paddingRight="28dp"
+        android:paddingBottom="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#B0000000"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/prev"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pause"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/settings"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>
